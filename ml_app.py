@@ -7,13 +7,13 @@ import os
 
 attribute_info = """
                  - pH: 0-14
-                 - Hardness: 47-323
-                 - Solids: 320-61127
+                 - Hardness: 117-277
+                 - Solids: 321-61227
                  - Chloramines: 0-13
                  - Sulfate: 129-481
                  - Conductivity: 181-753
                  - Organic Carbon: 2-28
-                 - Trihalomethanes: 0-124
+                 - Trihalomethanes: 1-124
                  - Turbidity: 1-7
                  """
 
@@ -30,13 +30,13 @@ def run_ml_app():
 
     st.subheader("Input your Data")
     ph = st.number_input("pH",0,14)
-    hardness = st.number_input("Hardness",47,323)
-    solids = st.number_input("Solids",320,61127)
+    hardness = st.number_input("Hardness",117,277)
+    solids = st.number_input("Solids",321,61227)
     chloramines = st.number_input("Chloramines",0,13)
     sulfate = st.number_input("Sulfate",129,481)
     conductivity = st.number_input("Conductivity",181,753)
     organic_carbon = st.number_input("Organic Carbon",2,28)
-    trihalomethanes = st.number_input("Trihalomethanes",0,124)
+    trihalomethanes = st.number_input("Trihalomethanes",1,124)
     turbidity = st.number_input("Turbidity",1,7)
 
     with st.expander("Your Selected Options"):
