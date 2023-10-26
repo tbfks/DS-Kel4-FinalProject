@@ -81,5 +81,5 @@ def run_ml_app():
         st.success("The Water is Potable")
         st.write(pred_probability)
     else:
-        st.warning("The Waster is Not Potable")
+        st.warning("The Water is Not Potable")
         st.write(pred_probability)
